@@ -9,6 +9,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { GetSkillPack } from "@/components/GetSkillPack";
+import { LogoMark } from "@/components/LogoMark";
 import { Steps } from "@/components/Steps";
 import { PLAY_TESTING_URL } from "@/lib/site";
 
@@ -60,7 +61,8 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-3xl px-6">
       <section className="pb-20 pt-24 sm:pt-32">
-        <p className="mb-4 text-sm font-medium tracking-wide text-[#2EE6D6]">
+        <LogoMark className="mb-8 h-16 w-16 rounded-2xl" size={64} />
+        <p className="mb-4 text-sm font-medium tracking-wide text-sunset">
           Android app
         </p>
         <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -144,7 +146,7 @@ export default function HomePage() {
                   href={f.href}
                   className="flex items-center gap-2.5 text-sm font-medium text-zinc-100 hover:text-white"
                 >
-                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-950 text-[#2EE6D6]">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-950 text-sunset">
                     <Icon className="h-4 w-4" strokeWidth={1.75} aria-hidden />
                   </span>
                   {f.title}

@@ -214,7 +214,7 @@ const faqs: { id: string; q: string; a: ReactNode }[] = [
 export default function FaqPage() {
   return (
     <article className="mx-auto max-w-3xl px-6 pb-28 pt-16 sm:pt-24">
-      <p className="mb-4 text-sm font-medium tracking-wide text-[#2EE6D6]">
+      <p className="mb-4 text-sm font-medium tracking-wide text-sunset">
         FAQ
       </p>
       <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
@@ -244,7 +244,7 @@ export default function FaqPage() {
         Still stuck? Email{" "}
         <a
           href={`mailto:${SUPPORT_EMAIL}`}
-          className="text-[#2EE6D6] hover:underline"
+          className="text-sunset hover:underline"
         >
           {SUPPORT_EMAIL}
         </a>

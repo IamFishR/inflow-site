@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function SkillsPage() {
   return (
     <article className="mx-auto max-w-3xl px-6 pb-28 pt-16 sm:pt-24">
-      <p className="mb-4 text-sm font-medium tracking-wide text-[#2EE6D6]">
+      <p className="mb-4 text-sm font-medium tracking-wide text-sunset">
         Skill pack
       </p>
       <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
@@ -43,7 +43,7 @@ export default function SkillsPage() {
                 className="inline-flex items-center gap-2 text-sm font-medium text-zinc-100 hover:text-white"
               >
                 <ArrowDownToLine
-                  className="h-3.5 w-3.5 text-[#2EE6D6]"
+                  className="h-3.5 w-3.5 text-sunset"
                   strokeWidth={1.75}
                   aria-hidden
                 />

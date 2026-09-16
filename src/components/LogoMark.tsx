@@ -1,19 +1,21 @@
-export function LogoMark({ className = "h-3.5 w-3.5" }: { className?: string }) {
+/** Play / launcher icon (512) copied from the Android app. */
+export const LOGO_SRC = "/icon-512.png";
+
+export function LogoMark({
+  className = "h-7 w-7 rounded-md",
+  size = 28,
+}: {
+  className?: string;
+  size?: number;
+}) {
   return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden>
-      <path
-        d="M4.5 16.5c3.5-9 11.5-9 15 0"
-        stroke="#2EE6D6"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-      />
-      <path
-        d="M7 18c2.4-5.5 7.6-5.5 10 0"
-        stroke="#2EE6D6"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="12" cy="9.5" r="1.85" fill="#2EE6D6" />
-    </svg>
+    <img
+      src={LOGO_SRC}
+      alt=""
+      width={size}
+      height={size}
+      className={className}
+      aria-hidden
+    />
   );
 }

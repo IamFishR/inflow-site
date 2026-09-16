@@ -198,7 +198,7 @@ const sections: {
 export default function FeaturesPage() {
   return (
     <article className="mx-auto max-w-3xl px-6 pb-28 pt-16 sm:pt-24">
-      <p className="mb-4 text-sm font-medium tracking-wide text-[#2EE6D6]">
+      <p className="mb-4 text-sm font-medium tracking-wide text-sunset">
         Android app
       </p>
       <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
@@ -216,7 +216,7 @@ export default function FeaturesPage() {
             <li key={section.id} id={section.id} className="scroll-mt-24">
               <div className="space-y-4">
                 <h2 className="flex items-center gap-2.5 text-base font-medium text-zinc-100">
-                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-950 text-[#2EE6D6]">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-950 text-sunset">
                     <Icon className="h-4 w-4" strokeWidth={1.75} aria-hidden />
                   </span>
                   {section.title}

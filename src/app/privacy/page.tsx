@@ -214,7 +214,7 @@ Your Google Drive (optional)
             Privacy questions:{" "}
             <a
               href={`mailto:${SUPPORT_EMAIL}`}
-              className="text-[#2EE6D6] hover:underline"
+              className="text-sunset hover:underline"
             >
               {SUPPORT_EMAIL}
             </a>

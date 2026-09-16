@@ -15,7 +15,7 @@ export function DocPage({
 }) {
   return (
     <article className="mx-auto max-w-3xl px-6 pb-28 pt-16 sm:pt-24">
-      <p className="mb-4 text-sm font-medium tracking-wide text-[#2EE6D6]">
+      <p className="mb-4 text-sm font-medium tracking-wide text-sunset">
         Docs
       </p>
       <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
@@ -44,7 +44,7 @@ function DocsNav({ current }: { current: "index" | GuideSlug }) {
             href={item.href}
             className={
               active
-                ? "text-sm font-medium text-[#2EE6D6]"
+                ? "text-sm font-medium text-sunset"
                 : "text-sm text-zinc-500 transition-colors hover:text-zinc-200"
             }
             aria-current={active ? "page" : undefined}

@@ -5,9 +5,9 @@ type Variant = "primary" | "compact";
 
 const styles: Record<Variant, string> = {
   primary:
-    "inline-flex items-center gap-2 rounded-full bg-[#2EE6D6] px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-[#5aeee2]",
+    "inline-flex items-center gap-2 rounded-full bg-sunset px-5 py-2.5 text-sm font-medium text-jet transition-colors hover:bg-dawn",
   compact:
-    "inline-flex items-center gap-1.5 rounded-full bg-[#2EE6D6] px-3.5 py-1.5 text-sm font-medium text-black transition-colors hover:bg-[#5aeee2]",
+    "inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-1.5 text-sm font-medium text-jet transition-colors hover:bg-dawn",
 };
 
 export function GetSkillPack({ variant = "primary" }: { variant?: Variant }) {

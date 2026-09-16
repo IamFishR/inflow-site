@@ -44,7 +44,7 @@ export default function SupportPage() {
       <section className="mt-14 space-y-8 border-t border-zinc-800/80 pt-14">
         <h2 className="flex items-center gap-2 text-sm font-medium tracking-wide text-zinc-500">
           <CircleHelp
-            className="h-4 w-4 text-[#2EE6D6]"
+            className="h-4 w-4 text-sunset"
             strokeWidth={1.75}
             aria-hidden
           />
@@ -75,7 +75,7 @@ export default function SupportPage() {
       <section className="mt-14 space-y-3 border-t border-zinc-800/80 pt-14">
         <h2 className="flex items-center gap-2 text-sm font-medium tracking-wide text-zinc-500">
           <Mail
-            className="h-4 w-4 text-[#2EE6D6]"
+            className="h-4 w-4 text-sunset"
             strokeWidth={1.75}
             aria-hidden
           />
@@ -85,7 +85,7 @@ export default function SupportPage() {
           Email{" "}
           <a
             href={`mailto:${SUPPORT_EMAIL}`}
-            className="text-[#2EE6D6] hover:underline"
+            className="text-sunset hover:underline"
           >
             {SUPPORT_EMAIL}
           </a>

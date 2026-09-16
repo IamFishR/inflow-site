@@ -30,12 +30,7 @@ export function Nav() {
             href="/"
             className="flex items-center gap-2.5 text-sm font-medium tracking-tight text-zinc-100 hover:text-white"
           >
-            <span
-              className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-zinc-800 bg-zinc-950"
-              aria-hidden
-            >
-              <LogoMark />
-            </span>
+            <LogoMark />
             InFlow
           </Link>
           <div className="sm:hidden">

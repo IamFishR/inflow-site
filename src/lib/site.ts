@@ -6,7 +6,11 @@ export const SUPPORT_EMAIL = "thisisganesh353@gmail.com";
 
 export const PACKAGE_NAME = "com.inflow.vault";
 
-export const ACCENT = "#2EE6D6";
+/** Canonical marketing origin (Vercel production). */
+export const SITE_URL = "https://inflow-vault.vercel.app";
+
+/** App DESIGN.md — sunset accent. */
+export const ACCENT = "#FF6308";
 
 export const SKILL_PACK_PATH = "/skills/inflow-second-brain/SKILL.md";
 

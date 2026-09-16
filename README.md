@@ -37,4 +37,4 @@ Skill pack files: `public/skills/inflow-second-brain/`.
 
 - No InFlow account or InFlow-hosted AI.
 - Android open testing: https://play.google.com/apps/testing/com.inflow.vault (not a production Play listing until Play publishes one).
-- Accent on this site is teal (`#2EE6D6`), distinct from QA Studio Pro.
+- Brand matches the Android app (`DESIGN.md`): jet/black field, sunset accent `#FF6308`. Icons are the Play 512 + launcher assets.
