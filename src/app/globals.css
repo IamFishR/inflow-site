@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* InFlow DESIGN.md tokens — dark marketing surface + sunset accent */
+:root {
+  --background: #000000;
+  --foreground: #f4f4f5;
+  --muted: #7d8187;
+  --border: #1f2228;
+  --accent: #ff6308;
+  --accent-hover: #ffd085;
+  --jet: #0a0a0a;
+  --charcoal: #1a1a1a;
+  --ivory: #f9f8f6;
+  --sunset: #ff6308;
+  --dawn: #ffd085;
+}
+
+@theme inline {
+  --color-sunset: #ff6308;
+  --color-dawn: #ffd085;
+  --color-jet: #0a0a0a;
+  --color-charcoal: #1a1a1a;
+  --color-ivory: #f9f8f6;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
