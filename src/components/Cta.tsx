@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GetSkillPack } from "./GetSkillPack";
+import { InstallCta } from "./InstallCta";
 
 export function Cta({
   secondary = { href: "/docs", label: "Read the guides" },
@@ -16,10 +17,11 @@ export function Cta({
         — not a hosted model. No InFlow account.
       </p>
       <div className="mt-6 flex flex-wrap gap-3">
-        <GetSkillPack />
+        <InstallCta />
+        <GetSkillPack variant="secondary" />
         <Link
           href={secondary.href}
-          className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-950 px-5 py-2.5 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900"
+          className="inline-flex min-h-11 items-center rounded-full border border-zinc-700 bg-zinc-950 px-5 py-2.5 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dawn"
         >
           {secondary.label}
         </Link>

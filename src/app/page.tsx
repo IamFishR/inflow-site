@@ -9,9 +9,10 @@ import {
   Sparkles,
 } from "lucide-react";
 import { GetSkillPack } from "@/components/GetSkillPack";
+import { InstallCta } from "@/components/InstallCta";
 import { LogoMark } from "@/components/LogoMark";
 import { Steps } from "@/components/Steps";
-import { PLAY_TESTING_URL } from "@/lib/site";
+import { PLAY_STORE_URL } from "@/lib/site";
 
 const features: {
   title: string;
@@ -74,31 +75,32 @@ export default function HomePage() {
           your device. Google Drive is optional backup, not our cloud.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
-          <GetSkillPack />
+          <InstallCta />
+          <GetSkillPack variant="secondary" />
           <Link
             href="/docs"
-            className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-950 px-5 py-2.5 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900"
+            className="inline-flex min-h-11 items-center rounded-full border border-zinc-700 bg-zinc-950 px-5 py-2.5 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dawn"
           >
             Docs
           </Link>
           <Link
             href="/features"
-            className="inline-flex items-center rounded-full border border-transparent px-5 py-2.5 text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100"
+            className="inline-flex min-h-11 items-center rounded-full border border-transparent px-5 py-2.5 text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dawn"
           >
             Features →
           </Link>
         </div>
         <p className="mt-4 text-xs text-zinc-600">
-          Android, local-first. Open testing on{" "}
+          Android, local-first. On{" "}
           <a
-            href={PLAY_TESTING_URL}
+            href={PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-400 underline-offset-2 hover:text-zinc-200 hover:underline"
           >
             Google Play
-          </a>{" "}
-          while the listing is in review — not a production store page yet.
+          </a>
+          .
         </p>
       </section>
 

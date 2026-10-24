@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CircleHelp, Mail } from "lucide-react";
-import { PLAY_TESTING_URL, SUPPORT_EMAIL } from "@/lib/site";
+import { PLAY_STORE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Support",
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "Where is the Play listing?",
-    a: "Open testing opt-in is play.google.com/apps/testing/com.inflow.vault. It is not a production store page until Play publishes one. This site does not host an APK.",
+    a: "Install from Google Play: play.google.com/store/apps/details?id=com.inflow.vault. This site does not host an APK.",
   },
 ];
 
@@ -59,14 +59,14 @@ export default function SupportPage() {
           ))}
         </ul>
         <p className="text-sm text-zinc-500">
-          Open testing:{" "}
+          Google Play:{" "}
           <a
-            href={PLAY_TESTING_URL}
+            href={PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-300 hover:underline"
           >
-            Google Play opt-in
+            Install on Google Play
           </a>
           .
         </p>

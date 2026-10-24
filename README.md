@@ -36,5 +36,5 @@ Skill pack files: `public/skills/inflow-second-brain/`.
 ## Honest product notes
 
 - No InFlow account or InFlow-hosted AI.
-- Android open testing: https://play.google.com/apps/testing/com.inflow.vault (not a production Play listing until Play publishes one).
+- Android on Google Play: https://play.google.com/store/apps/details?id=com.inflow.vault
 - Brand matches the Android app (`DESIGN.md`): jet/black field, sunset accent `#FF6308`. Icons are the Play 512 + launcher assets.

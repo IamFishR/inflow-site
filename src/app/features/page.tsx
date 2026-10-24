@@ -255,8 +255,7 @@ export default function FeaturesPage() {
           <code className="rounded border border-zinc-800 bg-zinc-950 px-1.5 py-0.5 text-zinc-300">
             drive.file
           </code>{" "}
-          scope). There is no in-app AI chat in this release. Open testing on
-          Play is not a production listing.{" "}
+          scope). There is no in-app AI chat in this release.{" "}
           <Link href="/faq" className="text-zinc-200 hover:underline">
             FAQ
           </Link>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GetSkillPack } from "./GetSkillPack";
+import { InstallCta } from "./InstallCta";
 import { LogoMark } from "./LogoMark";
 
 const links = [
@@ -34,7 +34,7 @@ export function Nav() {
             InFlow
           </Link>
           <div className="sm:hidden">
-            <GetSkillPack variant="compact" />
+            <InstallCta variant="compact" />
           </div>
         </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -56,7 +56,7 @@ export function Nav() {
             );
           })}
           <span className="hidden sm:inline-flex">
-            <GetSkillPack variant="compact" />
+            <InstallCta variant="compact" />
           </span>
         </nav>
       </div>

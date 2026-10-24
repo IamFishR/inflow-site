@@ -80,9 +80,8 @@ export default function DocsIndexPage() {
       <DocSection title="Not in this release">
         <p>
           No in-app AI chat, no hosted embeddings, no InFlow account, no team
-          workspace, no production Play listing yet (open testing / review).
-          Schema hooks for a future partner layer exist; they are empty on
-          purpose.
+          workspace. Schema hooks for a future partner layer exist; they are
+          empty on purpose.
         </p>
       </DocSection>
 

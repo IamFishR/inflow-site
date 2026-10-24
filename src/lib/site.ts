@@ -1,6 +1,6 @@
-/** Open testing opt-in. Not a production Play listing. */
-export const PLAY_TESTING_URL =
-  "https://play.google.com/apps/testing/com.inflow.vault";
+/** Production Google Play listing. */
+export const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.inflow.vault";
 
 export const SUPPORT_EMAIL = "thisisganesh353@gmail.com";
 

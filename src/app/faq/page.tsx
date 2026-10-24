@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Cta } from "@/components/Cta";
-import { PLAY_TESTING_URL, SUPPORT_EMAIL } from "@/lib/site";
+import { PLAY_STORE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "InFlow FAQ — local-first Android vault, optional Drive, inflow-db.json, no hosted AI, skill pack, open testing, and where your data lives.",
+    "InFlow FAQ — local-first Android vault, optional Drive, inflow-db.json, no hosted AI, skill pack, Google Play, and where your data lives.",
 };
 
 const faqs: { id: string; q: string; a: ReactNode }[] = [
@@ -114,18 +114,17 @@ const faqs: { id: string; q: string; a: ReactNode }[] = [
     a: (
       <>
         <p>
-          Package <code className="rounded border border-zinc-800 bg-zinc-950 px-1.5 py-0.5 text-zinc-300">com.inflow.vault</code>. Open
-          testing opt-in:{" "}
+          Package <code className="rounded border border-zinc-800 bg-zinc-950 px-1.5 py-0.5 text-zinc-300">com.inflow.vault</code>. Install
+          from Google Play:{" "}
           <a
-            href={PLAY_TESTING_URL}
+            href={PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-200 hover:underline"
           >
-            play.google.com/apps/testing/com.inflow.vault
+            play.google.com/store/apps/details?id=com.inflow.vault
           </a>
-          . That track has been in Play review; it is not a production store
-          listing yet. This site does not ship an APK.
+          . This site does not ship an APK.
         </p>
       </>
     ),
